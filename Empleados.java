@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 
 
 
-public class Empleados implements Comparable{
+public class Empleados implements Comparable{ //Aqui se implementa la interface Comparable, recordar que se debe sobreescirbir su metodo compareTo
  
  
    private final String nombre;
@@ -76,9 +76,9 @@ public class Empleados implements Comparable{
      
  }
  
-   @Override
+   @Override  //Este el metodo comare to que viene definida en la interface Comparable  (Esto lo mencionan en el video 49)
  public int compareTo(Object miObjeto){
-     Empleados otroEmpleado = (Empleados) miObjeto;
+     Empleados otroEmpleado = (Empleados) miObjeto; // Se realiza un cast de tipos, en este caso es de Objetos
      
      if(this.sueldo < otroEmpleado.sueldo){
          return -1;
