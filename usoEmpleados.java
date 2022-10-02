@@ -4,6 +4,8 @@
  */
 package com.mycompany.estudiojava;
 
+import java.util.Arrays;
+
 /**
  *
  * @author 52437
@@ -35,6 +37,7 @@ public class usoEmpleados {
           e.subeSueldo(5);
          }  
       
+     Arrays.sort(misEmpleados);
      for( Empleados e:misEmpleados){
         System.out.println("Nombre :" + e.dameNombre()+ "Sueldo :" + e.dameSueldo() +"Fecha de alta:" + e.dameFechaContrato());
               

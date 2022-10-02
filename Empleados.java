@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 
 
 
-public class Empleados {
+public class Empleados implements Comparable{
  
  
    private final String nombre;
@@ -75,4 +75,19 @@ public class Empleados {
      return "El idsiguiente es: " + IdSiguiente;
      
  }
+ 
+   @Override
+ public int compareTo(Object miObjeto){
+     Empleados otroEmpleado = (Empleados) miObjeto;
+     
+     if(this.sueldo < otroEmpleado.sueldo){
+         return -1;
+     }
+     if (this.sueldo > otroEmpleado.sueldo){
+         return 1;
+     }
+     return 0;
+ }
+ 
+ 
 } 
