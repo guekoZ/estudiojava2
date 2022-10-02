@@ -37,7 +37,8 @@ public class usoEmpleados {
           e.subeSueldo(5);
          }  
       
-     Arrays.sort(misEmpleados);
+     Arrays.sort(misEmpleados); //Se implementa la clase Arrays para ordenar los elemementos del array, pero lo que se debe tener cuidado es
+                                // que se de implemetar la interface Compareble, la cual se implementa en la clase Emplados  
      for( Empleados e:misEmpleados){
         System.out.println("Nombre :" + e.dameNombre()+ "Sueldo :" + e.dameSueldo() +"Fecha de alta:" + e.dameFechaContrato());
               
